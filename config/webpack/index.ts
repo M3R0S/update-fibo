@@ -1,2 +1,1 @@
-export * from "./webpackConfig";
-export * from "./webpackConfig.types"
+export { webpackConfig } from "./webpackConfig";

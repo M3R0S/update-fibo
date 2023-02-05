@@ -1,5 +1,5 @@
 import { Configuration as DevServerConfiguration } from "webpack-dev-server";
 
-import { WebpackOptions } from "../webpackConfig.types";
+import { WebpackOptions } from "../types";
 
 export type WebpackDevServer = (options: WebpackOptions) => DevServerConfiguration

@@ -1,4 +1,4 @@
 import { RuleSetRule } from "webpack";
-import { WebpackOptions } from "../webpackConfig.types";
+import { WebpackOptions } from "../types";
 
 export type WebpackLoaders = (options: WebpackOptions) => RuleSetRule[]

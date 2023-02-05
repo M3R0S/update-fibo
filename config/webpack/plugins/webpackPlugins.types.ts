@@ -1,5 +1,5 @@
 import { WebpackPluginInstance } from "webpack";
 
-import { WebpackOptions } from "../webpackConfig.types";
+import { WebpackOptions } from "../types";
 
 export type WebpackPlugins = (options: WebpackOptions) => WebpackPluginInstance[]
