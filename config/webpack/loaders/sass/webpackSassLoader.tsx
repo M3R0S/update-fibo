@@ -1,8 +1,8 @@
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
-import { SassLoader } from "./SassLoader.types";
+import { WebpackSassLoader } from "./webpackSassLoader.types";
 
-export const sassLoader: SassLoader = (options) => {
+export const webpackSassLoader: WebpackSassLoader = (options) => {
     const { isDev } = options;
 
     return {

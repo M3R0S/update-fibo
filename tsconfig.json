@@ -1,22 +1,22 @@
 {
     "compilerOptions": {
-      "outDir": "./build/",
-      "baseUrl": "./src",
-      "noImplicitAny": true,
-      "strictNullChecks": true,
-      "module": "ESNext",
-      "target": "es5",
-      "jsx": "react-jsx",
-      "allowJs": true,
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
+        "outDir": "./dist/",
+        "baseUrl": "./src",
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "module": "ESNext",
+        "target": "es5",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
     },
     "exclude": ["node_modules", ".vscode/**/*"],
     "ts-node": {
         "compilerOptions": {
-          "module": "CommonJS"
+            "module": "CommonJS"
         }
-      }
-  }
+    }
+}

@@ -1,3 +1,6 @@
-import { WebpackConfiguration, WebpackOptions } from "./types";
+import {
+    WebpackConfiguration,
+    WebpackOptions,
+} from "./types/webpackConfigTypes";
 
-export type WebpackConfig = (options: WebpackOptions ) => WebpackConfiguration
+export type WebpackConfig = (options: WebpackOptions) => WebpackConfiguration;

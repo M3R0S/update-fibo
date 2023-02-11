@@ -1,18 +1,18 @@
 import path from "path";
 
-import { webpackConfig } from "./config/webpack";
+import { webpackConfig } from "./config/webpack/webpackConfig";
 import {
     WebpackEnv,
     WebpackMode,
     WebpackOptions,
     WebpackPaths,
     WebpackConfiguration,
-} from "./config/webpack/types";
+} from "./config/webpack/types/webpackConfigTypes";
 
 export default (env: WebpackEnv): WebpackConfiguration => {
-    const mode: WebpackMode = env.MODE ?? "development";
+    const mode: WebpackMode = env.MODE || "development";
     const isDev: boolean = env.MODE === "development";
-    const port: number = env.PORT ?? 3000;
+    const port: number = env.PORT || 3000;
 
     const paths: WebpackPaths = {
         entry: path.resolve(__dirname, "src", "index.tsx"),

@@ -6,5 +6,6 @@ export const webpackDevServer: WebpackDevServer = (options) => {
     return {
         port,
         historyApiFallback: true,
+        hot: true,
     };
 };

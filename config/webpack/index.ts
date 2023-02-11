@@ -1,1 +1,0 @@
-export { webpackConfig } from "./webpackConfig";
