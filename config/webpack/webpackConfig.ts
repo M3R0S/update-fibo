@@ -22,6 +22,6 @@ export const webpackConfig: WebpackConfig = (options) => {
         resolve: webpackResolvers(options),
         plugins: webpackPlugins(options),
         devtool: isDev ? "inline-source-map" : undefined,
-        devServer: isDev ? webpackDevServer(options) : undefined,
+        devServer: webpackDevServer(options),
     };
 };

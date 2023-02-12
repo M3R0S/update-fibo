@@ -1,7 +1,7 @@
 import { WebpackDevServer } from "./webpackDevServer.types";
 
 export const webpackDevServer: WebpackDevServer = (options) => {
-    const { port } = options;
+    const { port, paths } = options;
 
     return {
         port,

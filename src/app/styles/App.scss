@@ -1,0 +1,11 @@
+@import "./reset.scss";
+@import "./variables/global.scss";
+@import "./theme/light.scss";
+@import "./theme/dark.scss";
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    transition: var(--transition-switch-theme-background);
+}

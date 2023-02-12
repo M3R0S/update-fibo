@@ -1,8 +1,4 @@
-import {
-    DefinePlugin,
-    HotModuleReplacementPlugin,
-    ProgressPlugin,
-} from "webpack";
+import { DefinePlugin, ProgressPlugin } from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
@@ -28,7 +24,6 @@ export const webpackPlugins: WebpackPlugins = (options) => {
 
     if (isDev) {
         plugins.push(new ReactRefreshWebpackPlugin());
-        plugins.push(new HotModuleReplacementPlugin());
     }
 
     return plugins;

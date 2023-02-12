@@ -1,0 +1,12 @@
+:root {
+    --font-family-main: "Montserrat", system-ui;
+
+    --main-color: #f7d22d;
+
+    --transition-switch-theme-background: background 0.5s linear;
+    --transition-switch-theme-color: color 0.5s linear;
+    --transition-switch-theme-fill: fill 0.5s linear;
+    --transition-switch-theme: var(--transition-switch-theme-background),
+        var(--transition-switch-theme-color),
+        var(--transition-switch-theme-fill);
+}

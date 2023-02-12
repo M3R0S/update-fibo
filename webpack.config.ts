@@ -11,7 +11,7 @@ import {
 
 export default (env: WebpackEnv): WebpackConfiguration => {
     const mode: WebpackMode = env.MODE || "development";
-    const isDev: boolean = env.MODE === "development";
+    const isDev: boolean = mode === "development";
     const port: number = env.PORT || 3000;
 
     const paths: WebpackPaths = {
